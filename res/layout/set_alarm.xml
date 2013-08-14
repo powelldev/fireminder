@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_margin="10dp"
+    android:id="@+id/toprow"
+    android:clickable="true"
+    android:onClick="timepickerbutton" >
+
+
+    <TextView
+        android:id="@+id/timepicker_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/set_alarm_arrival_time"
+        android:textSize="16sp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/time_chosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/TextView01"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        ></TextView>
+
+    
+
+</RelativeLayout>
+
+<View 
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/toprow"
+    android:background="#FFFFFF"/>
+<View 
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/botrow"
+    android:background="#FFFFFF"/>
+<View 
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/destination"
+    android:background="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botrow"
+		android:id="@+id/destination"
+		android:layout_margin="10dp"
+		android:hint="@string/set_alarm_edit_text"
+		android:lines="1"
+        />
+    <RelativeLayout
+        android:layout_below="@+id/toprow"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/botrow"
+    android:clickable="true"
+    android:onClick="datepickerbutton" >
+
+
+    <TextView
+        android:id="@+id/datepicker_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/set_alarm_arrival_date"
+        android:textSize="16sp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/date_chosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/TextView01"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        ></TextView>
+
+    
+
+</RelativeLayout>
+    
+    <Button
+        android:id="@+id/done_button"
+        android:text="Done"
+        android:layout_height="48dp"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        />
+
+   
+
+</RelativeLayout>
